@@ -1,0 +1,7 @@
+parameters:
+#    seer_uk_authentication.example.class: SeerUK\AuthenticationBundle\Example
+
+services:
+#    seer_uk_authentication.example:
+#        class: %seer_uk_authentication.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

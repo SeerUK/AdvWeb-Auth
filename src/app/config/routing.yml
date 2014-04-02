@@ -1,0 +1,4 @@
+seer_uk_authentication:
+    resource: "@SeerUKAuthenticationBundle/Resources/config/routing.yml"
+    prefix:   /
+

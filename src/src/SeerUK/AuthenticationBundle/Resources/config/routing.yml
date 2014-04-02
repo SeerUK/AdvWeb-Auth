@@ -1,0 +1,17 @@
+seer_uk_authentication_account_login:
+    pattern: /account/login
+    defaults: { _controller: SeerUKAuthenticationBundle:Account:login }
+
+seer_uk_authentication_account_login_check:
+    pattern: /account/login/check
+
+seer_uk_authentication_account_logout:
+    pattern: /account/logout
+
+seer_uk_authentication_home_home:
+    pattern: /
+    defaults: { _controller: SeerUKAuthenticationBundle:Account:home }
+
+seer_uk_authentication_admin_home:
+    pattern: /admin
+    defaults: { _controller: SeerUKAuthenticationBundle:Account:admin }

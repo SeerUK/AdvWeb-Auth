@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    {% if app.user %}
+        {{ dump(app.user) }}
+
+        <a href="{{ url('seer_uk_authentication_account_logout') }}">Logout</a>
+    {% endif %}
+</body>
+</html>

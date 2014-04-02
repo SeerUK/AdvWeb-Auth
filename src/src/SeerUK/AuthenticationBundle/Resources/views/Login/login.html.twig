@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{{ path('seer_uk_authentication_account_login_check') }}" class="form-compact" method="POST">
+        {% if error %}
+            <div class="form-row">
+                <div class="alert alert-error">Sign in error - {{ error.message }}</div>
+            </div>
+        {% endif %}
+
+        <input type="text" class="form-control" name="_username" value="{{ last_username }}" placeholder="Username" />
+        <input type="password" class="form-control" name="_password" placeholder="Password" />
+        <input type="hidden" name="_target_path" value="{{ referer }}" />
+        <input type="submit" class="btn btn-block btn-success" value="Sign In" />
+    </form>
+</body>
+</html>
+
